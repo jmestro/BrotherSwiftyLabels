@@ -22,6 +22,7 @@
 		D8BBAE8F2458FEEF00CB1FDA /* RedBlackImageSample.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BBAE8E2458FEEF00CB1FDA /* RedBlackImageSample.png */; };
 		D8BBAE9324594F4A00CB1FDA /* BengalSample.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BBAE9224594F4900CB1FDA /* BengalSample.png */; };
 		D8BBAE95245C81F500CB1FDA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D8BBAE94245C81F500CB1FDA /* README.md */; };
+		D8BBAE97245CA5C500CB1FDA /* SigningError.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BBAE96245CA5C500CB1FDA /* SigningError.png */; };
 		D8F0DF2D2457C19B00D5247A /* PrinterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8F0DF2C2457C19B00D5247A /* PrinterList.plist */; };
 		D8F0DF2F2458867300D5247A /* PrinterAndPaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0DF2E2458867300D5247A /* PrinterAndPaper.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		D8BBAE8E2458FEEF00CB1FDA /* RedBlackImageSample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedBlackImageSample.png; sourceTree = SOURCE_ROOT; };
 		D8BBAE9224594F4900CB1FDA /* BengalSample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BengalSample.png; sourceTree = "<group>"; };
 		D8BBAE94245C81F500CB1FDA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D8BBAE96245CA5C500CB1FDA /* SigningError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SigningError.png; sourceTree = "<group>"; };
 		D8F0DF2C2457C19B00D5247A /* PrinterList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PrinterList.plist; sourceTree = "<group>"; };
 		D8F0DF2E2458867300D5247A /* PrinterAndPaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterAndPaper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D8BBAE94245C81F500CB1FDA /* README.md */,
+				D8BBAE96245CA5C500CB1FDA /* SigningError.png */,
 				D872FAD824566BB300B70F62 /* BrotherSwiftyLabels-Bridging-Header.h */,
 				D8F0DF2C2457C19B00D5247A /* PrinterList.plist */,
 				D8F0DF2E2458867300D5247A /* PrinterAndPaper.swift */,
@@ -187,6 +190,7 @@
 				D8F0DF2D2457C19B00D5247A /* PrinterList.plist in Resources */,
 				D872FACC2456354A00B70F62 /* Assets.xcassets in Resources */,
 				D872FACA2456354900B70F62 /* Main.storyboard in Resources */,
+				D8BBAE97245CA5C500CB1FDA /* SigningError.png in Resources */,
 				D8BBAE8F2458FEEF00CB1FDA /* RedBlackImageSample.png in Resources */,
 				D8BBAE8D2458F3E900CB1FDA /* PDFSample.pdf in Resources */,
 				D8BBAE95245C81F500CB1FDA /* README.md in Resources */,
