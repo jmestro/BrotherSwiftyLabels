@@ -21,3 +21,5 @@
 #import <BRLMPrinterKit/BRLMPrinterClassifier.h>
 #import <BRLMPrinterKit/BRLMCustomPaperSize.h>
 #import <BRLMPrinterKit/BRPtouchNetworkManager.h>
+//#import <BRLMPrinterKit/BRPtouchBluetoothManager.h>
+//#import <BRLMPrinterKit/BRPtouchDeviceInfo.h>

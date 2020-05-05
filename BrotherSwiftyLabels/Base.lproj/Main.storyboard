@@ -172,10 +172,9 @@
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOl-LK-AnL">
                                                     <rect key="frame" x="99" y="8" width="307" height="88"/>
-                                                    <state key="normal" title="Dithered Image Sample"/>
+                                                    <state key="normal" title="Printer Halftoned Image Sample"/>
                                                     <connections>
-                                                        <action selector="printDitheredSample:" destination="lUl-Vy-3gR" eventType="touchUpInside" id="rf2-KT-FHY"/>
-                                                        <action selector="printRedBlackSample:" destination="lUl-Vy-3gR" eventType="touchUpInside" id="IPy-ra-t0y"/>
+                                                        <action selector="printHalftoneSample:" destination="lUl-Vy-3gR" eventType="touchUpInside" id="9oE-cX-CMn"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -186,6 +185,43 @@
                                                 <constraint firstItem="UKy-ep-brA" firstAttribute="leading" secondItem="eil-nH-DAI" secondAttribute="leading" constant="16" id="cXs-Yg-mrM"/>
                                                 <constraint firstItem="uOl-LK-AnL" firstAttribute="leading" secondItem="UKy-ep-brA" secondAttribute="trailing" constant="8" id="uO6-nB-75T"/>
                                                 <constraint firstItem="uOl-LK-AnL" firstAttribute="top" secondItem="eil-nH-DAI" secondAttribute="top" constant="8" id="ve6-tp-gZ3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="104" id="Xsg-Q4-CNs">
+                                        <rect key="frame" x="0.0" y="330" width="414" height="104"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xsg-Q4-CNs" id="Zl0-kb-PXz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BengalSampleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="82R-gv-010">
+                                                    <rect key="frame" x="16" y="14.5" width="75" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="7cr-1R-8NT"/>
+                                                        <constraint firstAttribute="width" constant="75" id="Tfo-Ps-4p1"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0z-Ps-8gY">
+                                                    <rect key="frame" x="99" y="8" width="307" height="88"/>
+                                                    <state key="normal" title="Line Screened Image Sample"/>
+                                                    <connections>
+                                                        <action selector="printDitheredSample:" destination="lUl-Vy-3gR" eventType="touchUpInside" id="cml-eu-7sB"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="u0z-Ps-8gY" secondAttribute="trailing" constant="8" id="5z4-Kq-XQ3"/>
+                                                <constraint firstItem="u0z-Ps-8gY" firstAttribute="leading" secondItem="82R-gv-010" secondAttribute="trailing" constant="8" id="6je-ak-UYn"/>
+                                                <constraint firstAttribute="bottom" secondItem="u0z-Ps-8gY" secondAttribute="bottom" constant="8" id="GDM-yv-cux"/>
+                                                <constraint firstItem="u0z-Ps-8gY" firstAttribute="top" secondItem="Zl0-kb-PXz" secondAttribute="top" constant="8" id="beq-N9-jTg"/>
+                                                <constraint firstItem="82R-gv-010" firstAttribute="leading" secondItem="Zl0-kb-PXz" secondAttribute="leading" constant="16" id="tii-aV-vll"/>
+                                                <constraint firstItem="82R-gv-010" firstAttribute="centerY" secondItem="Zl0-kb-PXz" secondAttribute="centerY" id="weV-ku-lFf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

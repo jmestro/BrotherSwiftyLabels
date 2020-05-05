@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D84F92AE245E57E90036EA07 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84F92AD245E57E90036EA07 /* ExternalAccessory.framework */; };
 		D872FAC12456354900B70F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872FAC02456354900B70F62 /* AppDelegate.swift */; };
 		D872FAC32456354900B70F62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872FAC22456354900B70F62 /* SceneDelegate.swift */; };
 		D872FAC52456354900B70F62 /* SelectPrinterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872FAC42456354900B70F62 /* SelectPrinterViewController.swift */; };
@@ -42,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D84F92AB245E57E90036EA07 /* BrotherSwiftyLabels.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrotherSwiftyLabels.entitlements; sourceTree = "<group>"; };
+		D84F92AD245E57E90036EA07 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		D872FABD2456354900B70F62 /* BrotherSwiftyLabels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrotherSwiftyLabels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D872FAC02456354900B70F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D872FAC22456354900B70F62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84F92AE245E57E90036EA07 /* ExternalAccessory.framework in Frameworks */,
 				D872FADB2456710A00B70F62 /* BRLMPrinterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D84F92AC245E57E90036EA07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D84F92AD245E57E90036EA07 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D872FAB42456354900B70F62 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +98,7 @@
 				D8F0DF2E2458867300D5247A /* PrinterAndPaper.swift */,
 				D872FABF2456354900B70F62 /* BrotherSwiftyLabels */,
 				D872FABE2456354900B70F62 /* Products */,
+				D84F92AC245E57E90036EA07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +113,7 @@
 		D872FABF2456354900B70F62 /* BrotherSwiftyLabels */ = {
 			isa = PBXGroup;
 			children = (
+				D84F92AB245E57E90036EA07 /* BrotherSwiftyLabels.entitlements */,
 				D872FAE224573E3500B70F62 /* ViewControllers */,
 				D872FAC82456354900B70F62 /* Main.storyboard */,
 				D872FACB2456354A00B70F62 /* Assets.xcassets */,
@@ -356,8 +370,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BrotherSwiftyLabels/BrotherSwiftyLabels.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3L3733P76M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BrotherSwiftyLabels",
@@ -382,8 +397,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BrotherSwiftyLabels/BrotherSwiftyLabels.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3L3733P76M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BrotherSwiftyLabels",

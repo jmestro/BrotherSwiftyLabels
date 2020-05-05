@@ -90,6 +90,35 @@ class PrintTableViewController: UITableViewController {
 		printerDriver.closeChannel()
 	}
 	
+	@IBAction func printHalftoneSample(_ sender: UIButton) {
+		guard let selectedPrinter = selectedPrinter else { return }
+		
+		let channel = BRLMChannel(wifiIPAddress: selectedPrinter.strIPAddress)
+		let openChannelResult = BRLMPrinterDriverGenerator.open(channel)
+
+		guard openChannelResult.error.code == BRLMOpenChannelErrorCode.noError,
+			let printerDriver = openChannelResult.driver else {
+				print("Channel Error: \(openChannelResult.error.code.rawValue)")
+				return
+		}
+		
+		let halftoneURL = Bundle.main.path(forResource: "BengalSample", ofType: "png")
+		let printerSettings = BRLMQLPrintSettings(defaultPrintSettingsWith: .QL_820NWB)
+		printerSettings?.labelSize = .rollW54
+		
+		// The default halftone from the printer is .threshold
+		// but you also have .patternDither and .errorDiffusion options
+		printerSettings?.halftone = .errorDiffusion
+		
+		printerSettings?.autoCut = true
+		
+		let pngImage = UIImage(contentsOfFile: halftoneURL!)
+		let error = printerDriver.printImage(with: pngImage!.cgImage!, settings: printerSettings!)
+		print("HalftoneSample print - result code: \(error.code.rawValue)")
+		
+		printerDriver.closeChannel()
+	}
+	
 	// Special note: Running this method from a simulator may
 	// crash, but it seems to run fine on an actual device. Some
 	// developers report success at avoiding the crash by
@@ -117,19 +146,18 @@ class PrintTableViewController: UITableViewController {
 		
 		let kittenURL = Bundle.main.path(forResource: "BengalSample", ofType: "png")
 		let printerSettings = BRLMQLPrintSettings(defaultPrintSettingsWith: .QL_820NWB)
-		printerSettings?.labelSize = .rollW62
+		printerSettings?.labelSize = .rollW54
 		printerSettings?.autoCut = true
 		
 		let kittenImage = UIImage(contentsOfFile: kittenURL!)
 		let context = CIContext(options: nil)
 		
-		if let ditherFilter = CIFilter(name: "CIDither") {
+		if let ditherFilter = CIFilter(name: "CILineScreen") {
 			let initialImage = CIImage(image: kittenImage!)
 			ditherFilter.setValue(initialImage, forKey: kCIInputImageKey)
-			
-			// Lower the Intensity value below to reduce the
-			// density of dots in your image
-			ditherFilter.setValue(2.5, forKey: kCIInputIntensityKey)
+			ditherFilter.setValue(45, forKey: kCIInputAngleKey)
+			ditherFilter.setValue(8, forKey: kCIInputWidthKey)
+			ditherFilter.setValue(0.7, forKey: kCIInputSharpnessKey)
 			
 			if let finalImage = ditherFilter.outputImage {
 				if let cgImage = context.createCGImage(finalImage, from: finalImage.extent) {

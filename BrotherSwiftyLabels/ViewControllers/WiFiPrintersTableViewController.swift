@@ -56,6 +56,9 @@ class WiFiPrintersTableViewController: UITableViewController {
 		// second for a simple network with few devices.
 		manager.startSearch(5)
 		self.networkManager = manager
+		
+//		let bl = BRPtouchBluetoothManager.shared()?.pairedDevices()
+//		print(bl)
     }
 
     // MARK: - Table view support
