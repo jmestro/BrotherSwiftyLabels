@@ -47,7 +47,7 @@ class SelectPrinterViewController: UIViewController {
 	
 	@IBAction func wifiSelectPrinter(_ sender: UIButton) {
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-		let wifiPrintersViewController = storyboard.instantiateViewController(identifier: "WifiPrinters") as! WiFiPrintersTableViewController
+		let wifiPrintersViewController = storyboard.instantiateViewController(withIdentifier: "WifiPrinters") as! WiFiPrintersTableViewController
 		wifiPrintersViewController.title = "Select a WiFi Printer"
 		
 		navigationController?.pushViewController(wifiPrintersViewController, animated: true)

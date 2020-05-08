@@ -37,7 +37,7 @@ class WiFiPrintersTableViewController: UITableViewController {
 		}
 		navigationItem.hidesBackButton = true
 		
-		activityIndicator.style = .large
+//		activityIndicator.style = .large
 		activityIndicator.center = self.view.center
 		self.view.addSubview(activityIndicator)
 		activityIndicator.startAnimating()

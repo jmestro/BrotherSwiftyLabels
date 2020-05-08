@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D84F92AE245E57E90036EA07 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84F92AD245E57E90036EA07 /* ExternalAccessory.framework */; };
 		D872FAC12456354900B70F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872FAC02456354900B70F62 /* AppDelegate.swift */; };
-		D872FAC32456354900B70F62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872FAC22456354900B70F62 /* SceneDelegate.swift */; };
 		D872FAC52456354900B70F62 /* SelectPrinterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872FAC42456354900B70F62 /* SelectPrinterViewController.swift */; };
 		D872FAC72456354900B70F62 /* PrintTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D872FAC62456354900B70F62 /* PrintTableViewController.swift */; };
 		D872FACA2456354900B70F62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D872FAC82456354900B70F62 /* Main.storyboard */; };
@@ -47,7 +46,6 @@
 		D84F92AD245E57E90036EA07 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		D872FABD2456354900B70F62 /* BrotherSwiftyLabels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrotherSwiftyLabels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D872FAC02456354900B70F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D872FAC22456354900B70F62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D872FAC42456354900B70F62 /* SelectPrinterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPrinterViewController.swift; sourceTree = "<group>"; };
 		D872FAC62456354900B70F62 /* PrintTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintTableViewController.swift; sourceTree = "<group>"; };
 		D872FAC92456354900B70F62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				D8BBAE9224594F4900CB1FDA /* BengalSample.png */,
 				D872FACD2456354A00B70F62 /* LaunchScreen.storyboard */,
 				D872FAC02456354900B70F62 /* AppDelegate.swift */,
-				D872FAC22456354900B70F62 /* SceneDelegate.swift */,
 				D872FAD02456354A00B70F62 /* Info.plist */,
 				D872FAD624566B7200B70F62 /* BRLMPrinterKit.framework */,
 			);
@@ -224,7 +221,6 @@
 				D872FAE124573E2800B70F62 /* TemplateViewController.swift in Sources */,
 				D872FAC52456354900B70F62 /* SelectPrinterViewController.swift in Sources */,
 				D872FAC12456354900B70F62 /* AppDelegate.swift in Sources */,
-				D872FAC32456354900B70F62 /* SceneDelegate.swift in Sources */,
 				D8F0DF2F2458867300D5247A /* PrinterAndPaper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -355,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -378,7 +374,7 @@
 					"$(PROJECT_DIR)/BrotherSwiftyLabels",
 				);
 				INFOPLIST_FILE = BrotherSwiftyLabels/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,7 +401,7 @@
 					"$(PROJECT_DIR)/BrotherSwiftyLabels",
 				);
 				INFOPLIST_FILE = BrotherSwiftyLabels/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
